@@ -22,7 +22,7 @@ Telegram::Bot::Client.run(tg_token) do |bot|
         bot.api.send_message(chat_id: msg.chat.id, text: "Invalid URL")
         send = false
       end
-#      bot.api.send_document(chat_id: "@ilovecloudstorage", document: photo_path, caption: caption, parse_mode: "Markdown") if send
+      bot.api.send_document(chat_id: "@ilovecloudstorage", document: photo_path, caption: caption, parse_mode: "Markdown") if send
     end
   end
 end
